@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.to-do-list{
+  font-family: cursive;
+  text-align: center;
+  margin-top: 120px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2{
+  font-family: cursive;
+  font-size: 4rem;
+}
+
+.new-task-input{
+  
+}
+
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Add-button{
+  background-color: rgb(148, 230, 148);
+  margin-left: 12px;
+}
+.Add-button:hover{
+  background-color: rgb(3, 255, 3);
+}
+
+.del-task-button{
+  background-color: rgb(210, 66, 66);
+}
+
+.del-task-button:hover{
+  background-color: rgb(106, 10, 10);
+}
+
+.MoveUp-task-button{
+  background-color: rgb(8, 174, 174);
+}
+
+.MoveUp-task-button:hover{
+  background-color: rgb(5, 95, 95);
+}
+
+.MoveDown-task-button{
+  background-color: rgb(42, 213, 213);
+}
+.MoveDown-task-button:hover{
+  background-color: rgb(8, 102, 102);
+}
+
+input{
+  size: 1.8rem;
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+li{
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(243, 236, 226);
+  margin-bottom: 10px;
+  border: 3px solid rgb(238, 229, 229);
+  border-radius: 8px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.text{flex:1;}
+
+
+.del-task-button,.MoveUp-task-button,.MoveDown-task-button{
+  padding-right: 7px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }
