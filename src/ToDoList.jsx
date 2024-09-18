@@ -8,7 +8,7 @@ import { LuMoveDown } from "react-icons/lu";
 
 const ToDoList = () => {
 
-    const [tasks,setTasks]=useState(["eat banana","water plants"]);
+    const [tasks,setTasks]=useState([]);
     const [newTask,setNewTask]=useState("");
 
 

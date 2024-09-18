@@ -1,67 +1,73 @@
-.to-do-list{
+.to-do-list {
   font-family: cursive;
   text-align: center;
   margin-top: 120px;
 }
 
-h2{
+h2 {
   font-family: cursive;
   font-size: 4rem;
 }
 
-.new-task-input{
-  
+.new-task-input,
+.Add-button {
+  height: 50px; /* Set a fixed height */
+  font-size: 1.7rem;
+  padding: 0 10px; /* Adjust padding for consistent size */
+  border-radius: 8px;
+  border: 2px solid; /* Add a border to match */
 }
 
-button{
+.new-task-input {
+  flex: 1; /* Allows the input to grow if needed */
+}
+
+button {
   font-size: 1.7rem;
   font-weight: bold;
-  padding: 10px 20px;
   color: antiquewhite;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
 }
 
-.Add-button{
+.Add-button {
   background-color: rgb(148, 230, 148);
   margin-left: 12px;
 }
-.Add-button:hover{
+
+.Add-button:hover {
   background-color: rgb(3, 255, 3);
 }
 
-.del-task-button{
+.del-task-button {
   background-color: rgb(210, 66, 66);
 }
 
-.del-task-button:hover{
+.del-task-button:hover {
   background-color: rgb(106, 10, 10);
 }
 
-.MoveUp-task-button{
+.MoveUp-task-button {
   background-color: rgb(8, 174, 174);
 }
 
-.MoveUp-task-button:hover{
+.MoveUp-task-button:hover {
   background-color: rgb(5, 95, 95);
 }
 
-.MoveDown-task-button{
+.MoveDown-task-button {
   background-color: rgb(42, 213, 213);
 }
-.MoveDown-task-button:hover{
+
+.MoveDown-task-button:hover {
   background-color: rgb(8, 102, 102);
 }
 
-input{
-  size: 1.8rem;
-  padding: 15px;
-  border: 2px solid;
-  border-radius: 8px;
+input {
+  padding: 0 15px; /* Adjust padding for consistent size */
 }
 
-li{
+li {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 10px;
@@ -70,15 +76,23 @@ li{
   border: 3px solid rgb(238, 229, 229);
   border-radius: 8px;
   display: flex;
-
   justify-content: center;
 }
 
-.text{flex:1;}
+.text {
+  flex: 1;
+}
 
-
-.del-task-button,.MoveUp-task-button,.MoveDown-task-button{
-  padding-right: 7px 12px;
+.del-task-button,
+.MoveUp-task-button,
+.MoveDown-task-button {
+  padding: 7px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between input and task list */
 }
